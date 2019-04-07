@@ -7,16 +7,30 @@
 #' brute(A)
 brute<-function(A){
   n<-nrow(A)
+  cnt<-rep(0,n)
   ind<-1:n
-  W<-prod(A[cbind(1:n,ind)])
+  indmat<-cbind(1:n,ind)
+  W<-prod(A[indmat])
   EP<-diag(n)
-  for(i in 2:factorial(n)){
-    ind<-heap(ind)
-    indmat<-cbind(1:n,ind)
-    w<-prod(A[indmat])
-    W<-W+w
+  
+  i<-0
+  while(i<n){
+    if(cnt[i+1]<i){                                           # The outer parts of this while
+    if(i%%2==0){ind[c(1,i+1)]<-ind[c(i+1,1)]                  # loop implements Heap's algorithm
+    }else{ind[c(i+1,cnt[i+1]+1)]<-ind[c(cnt[i+1]+1,i+1)]}     # for enumerating permutations.
+    cnt[i+1]<-cnt[i+1]+1
+    i<-0
+    
+    indmat<-cbind(1:n,ind)    # This part of the code updates
+    w<-prod(A[indmat])        # the running weighted mean of 
+    W<-W+w                    # permutation matrices.
     EP<-EP*(1-w/W)
     EP[indmat]<-EP[indmat]+w/W
+    
+    }else{
+      cnt[i+1]<-0
+      i<-i+1
+    }
   }
   attr(EP,"permanent")<-W
   EP

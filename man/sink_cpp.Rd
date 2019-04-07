@@ -1,8 +1,8 @@
-\name{sink}
-\alias{sink}
+\name{sink_cpp}
+\alias{sink_cpp}
 \title{A variational approximation of an expected permutation matrix using C++}
 \usage{
-sink(A, maxit = 99)
+sink_cpp(A, maxit = 99)
 }
 \arguments{
 \item{A}{A matrix of assignment likelihoods.}
@@ -17,5 +17,5 @@ Computes an approximate expected permutation matrix and marginal likelihood from
 }
 \examples{
 data(A)
-sink(A)
+sink_cpp(A)
 }

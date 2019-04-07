@@ -9,7 +9,7 @@
 sink<-function(A,maxit=99){
   n<-nrow(A);u<-rep(1,n);v<-rep(1,n)
   its<-0;rsums<-0
-  while( its<maxit & max(abs(rsums-1))>1e-5 ){
+  while( its<maxit ){
     its<-its+1
     rsums<-rowSums(A);u<-rsums*u
     A<-sweep(A,1,rsums,FUN="/")
