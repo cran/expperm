@@ -4,10 +4,12 @@
 \alias{BG}
 \title{The Brualdi-Gibson method for computing an expected permutation matrix}
 \usage{
-BG(A)
+BG(A, return.permanent = FALSE)
 }
 \arguments{
 \item{A}{A tridiagonal matrix of assignment likelihoods.}
+
+\item{return.permanent}{A logical value indicating whether the function should also return the permanent of \code{A}, which is then added to the output as an attribute.}
 }
 \value{
 \code{E(P)}, the expected permutation matrix corresponding to \code{A}.

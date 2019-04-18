@@ -4,7 +4,7 @@
 \name{df2}
 \alias{df2}
 \title{A (second) small data frame of simulated records}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 16 rows and 3 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 18 rows and 3 columns.}
 \usage{
 df2
 }

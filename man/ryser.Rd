@@ -4,10 +4,12 @@
 \alias{ryser}
 \title{The Ryser method for computing an expected permutation matrix}
 \usage{
-ryser(A)
+ryser(A, return.permanent = FALSE)
 }
 \arguments{
 \item{A}{A matrix of assignment likelihoods.}
+
+\item{return.permanent}{A logical value indicating whether the function should also return the permanent of \code{A}, which is then added to the output as an attribute.}
 }
 \value{
 \code{E(P)}, the expected permutation matrix corresponding to \code{A}.
