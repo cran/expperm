@@ -1,7 +1,7 @@
 Package: expperm
 Type: Package
 Title: Computing Expectations and Marginal Likelihoods for Permutations
-Version: 1.1
+Version: 1.2
 Date: 2019-04-04
 Author: Ben Powell
 Maintainer: Ben Powell <ben.powell@york.ac.uk>
@@ -14,6 +14,6 @@ LazyData: true
 RoxygenNote: 6.1.1
 Suggests: testthat
 NeedsCompilation: yes
-Packaged: 2019-04-18 10:35:44 UTC; ben
+Packaged: 2019-05-23 09:02:50 UTC; ben
 Repository: CRAN
-Date/Publication: 2019-04-18 10:50:03 UTC
+Date/Publication: 2019-05-23 09:30:03 UTC

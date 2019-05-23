@@ -10,7 +10,7 @@
 
   The package serves primarily to demonstrate the algorithms described in the accompanying paper, which is currently under review.
   
-  We include versions, which are as similar as reasonable possible, of algorithms written in both R and C++. The R code is intended to facilitate testing, modification and re-use of the code while the C++ code is intended to implement the algorithms most efficiently for the sake of real problems.
+  We include versions, which are as similar as reasonably possible, of algorithms written in both R and C++. The R code is intended to facilitate testing, modification and re-use of the code while the C++ code is intended to implement the algorithms most efficiently for application to real problems.
 }
 \author{
   \packageAuthor{expperm}

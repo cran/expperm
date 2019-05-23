@@ -18,6 +18,6 @@ sink<-function(A,maxit=99,return.permanent.bound=FALSE){
     A<-sweep(A,2,csums,FUN="/")
   }
   W<-prod(u,v)
-  attr(A,"permanent bound")<-W
+  if(return.permanent.bound){attr(A,"permanent bound")<-W}
   A
 }
