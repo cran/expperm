@@ -22,7 +22,11 @@
 }
 % Optionally other standard keywords, one per line,
 % from the file KEYWORDS in the R documentation.
-\keyword{package,linkage error,permanent,permutation}
+\keyword{package}
+\keyword{math}
+\concept{linkage error}
+\concept{permanent}
+\concept{permutation}
 % \seealso{
 %   Optional links to other man pages
 % }

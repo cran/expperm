@@ -1,5 +1,4 @@
 #include <Rcpp.h>
-#include <cmath>
 using namespace Rcpp;
 
 // [[Rcpp::export]]
@@ -9,7 +8,7 @@ NumericMatrix ryser_cpp(NumericMatrix A) {
   NumericVector f(n+1);
   for(int i=0;i<(n+1);i++){f(i)=i;}
   int j=0;
-  int p=pow(-1,n);
+  double p=pow(-1,static_cast<double>(n));
   NumericVector rs(n);
   double w=0;
   double W=0;
